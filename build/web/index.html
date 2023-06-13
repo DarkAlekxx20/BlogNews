@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog News</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Blog News is the place where you can share your opinion about the last international news."/>
+    <meta author="Alex SP"/>
+    <link rel="shortcut icon" href="Resources/favicon.ico" type="image/x-icon"/>
+    <!--CSS & FRAMEWORKS-->
+    <link rel="stylesheet" href="Style/style.css" />
+  </head>
+  <body>
+    <div class="container-form sign-up">
+      <div class="welcome-back">
+        <div class="message">
+          <h2>Bienvenido a Blog News</h2>
+          <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+          <button class="sign-up-btn">Iniciar Sesion</button>
+        </div>
+      </div>
+      <form class="formulario">
+        <h2 class="create-account">Crear una cuenta</h2>
+        <p class="cuenta-gratis">Crear una cuenta gratis</p>
+        <input type="text" placeholder="Ingrese un nombre de usuario:" id="txtNombreR"/>
+        <input type="email" placeholder="Ingrese un email:" id="txtEmailR"/>
+        <input type="password" placeholder="Ingrese una contrasenia" id="txtContraseniaR"/>
+        <input type="button" value="Registrarse" onclick="insertUsuario();"/>
+      </form>
+    </div>
+    <div class="container-form sign-in">
+      <form class="formulario">
+        <h2 class="create-account">Iniciar Sesion</h2>
+        <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+        <input type="text" placeholder="Nombre de Usuario:" id="txtNombreL"/>
+        <input type="password" placeholder="Contrasenia:" id="txtContraseniaL"/>
+        <input type="button" value="Iniciar Sesion" onclick="login();"/>
+      </form>
+      <div class="welcome-back">
+        <div class="message">
+          <h2>Bienvenido de nuevo</h2>
+          <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+          <button class="sign-in-btn">Registrarse</button>
+        </div>
+      </div>
+    </div>
+    <!--JS & FRAMEWORKS-->
+    <script src="https://kit.fontawesome.com/14b739e11c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/login.js"></script>
+  </body>
+</html>

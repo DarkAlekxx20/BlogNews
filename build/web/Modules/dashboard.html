@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog News</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Israel Alejandro López Tovar">
+        <meta name="date" content="08/06/2023">
+        <!--CSS & FRAMEWORKS-->
+        <link rel="stylesheet" type="text/css" href="../Style/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../Style/css/estilos.css"/>
+        <link rel="shortcut icon" href="../Resources/favicon.ico" type="image/x-icon">
+    </head>
+    <body onload="inizializar();">
+        <div class="principal" id="noticias">
+            <h1 class="text-center">Noticias</h1>
+            <hr>
+            <div class="row d-flex" id="llenarNoticias">
+
+            </div>                
+        </div>
+        
+        <div class="principal d-none" id="formularioNoticia">
+            <h1 class="text-center">Noticia nueva</h1>
+            <form class="form-group was-validated">
+                <div class="form-group was-validated">
+                    <label class="form-label" for="txtTitulo">Titulo</label>
+                    <input class="form-control" type="text" id="txtTitulo" required>
+                    <div class="invalid-feedback">
+                        Ingresa el titulo del articulo
+                    </div>
+                </div>
+                <div class="form-group was-validated">
+                    <label class="form-label" for="txtContenido">Contenido</label>
+                    <input class="form-control" type="text" id="txtContenido" required>
+                    <div class="invalid-feedback">
+                        Ingresa el contenido del articulo
+                    </div>
+                </div>
+                <div class="form-group was-validated">
+                    <label class="form-label" for="txtPersonal">Personal</label>
+                    <input class="form-control" type="text" id="txtPersonal" disabled>
+                    <div class="invalid-feedback">
+                        Ingresa el contenido del articulo
+                    </div>
+                </div>
+                <a>
+                    <button type="button" class="btn btn-outline-success w-100 mb-3" onclick="enviarNoticia();">Enviar Noticia</button>
+                </a>
+                <a>
+                    <button type="button" class="btn btn-outline-secondary w-100" onclick="regresar();">Regresar a Noticias</button>
+                </a>
+            </form>
+        </div>
+        <!--JS & FRAMEWORKS-->
+        <script src="../Style/js/bootstrap.bundle.js"></script>
+        <script src="../JS/main.js"></script>
+    </body>
+</html>
