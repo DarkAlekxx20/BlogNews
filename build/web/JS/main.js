@@ -20,11 +20,11 @@ function fecha(){
 function agregarNota() {
   let currentUser = localStorage.getItem("currentUser");
   let usuario = JSON.parse(currentUser);
-  if (usuario.rol == "Interno") {
+  if (usuario.rol == "Interno"){
     document.getElementById("noticias").classList.add("d-none");
     document.getElementById("formularioNoticia").classList.remove("d-none");
     document.getElementById("txtPersonal").value = usuario.nombreUsuario;
-  } else {
+  }else{
     alert("No tienes los permisos para agregar una nota");
   }
 }
@@ -110,10 +110,8 @@ function loadTableNoticias(data) {
                                                                 </div>`;
 
               noticias = data;
-
               console.log(noticias);
               console.log(comentarios);
-
               noticias.forEach(function (noticia) {
                 let comentariosNoticia = comentarios.filter(function (
                   comentario
@@ -148,9 +146,7 @@ function loadTableNoticias(data) {
                     registroComentarios +=
                       `<h5>` +
                       respuesta.texto +
-                      `</h5>
-                                                                                  <hr>
-                                                                                  <hr>`;
+                      `</h5><hr><hr>`;
                   });
                 });
 

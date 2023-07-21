@@ -33,10 +33,8 @@ public class ControllerComentario {
                                                    +c.getUsuario().getIdUsuario()+"');";
             stmt=conn.createStatement();
             stmt.execute(query1);
-            
             String query2 = "SELECT LAST_INSERT_ID()";
             rs=stmt.executeQuery(query2);            
-            
             conn.commit();
             conn.setAutoCommit(true);
             rs.close();
